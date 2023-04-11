@@ -1,0 +1,64 @@
+body,h1,h2,h3,h4,h5,h6,p,div {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 22px;
+}
+.container {
+  max-width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 230px;
+}
+.header {
+  background-color: #dcdcdc;
+  margin: 0 auto;
+  height: max-content;
+}
+.header__logo {
+  display: inline-block;
+  float: left;
+  margin-bottom: 65px;
+  margin-top: 65px;
+}
+.header__title {
+  display: inline-block;
+  float: right;
+  padding-left: 10px;
+  padding-top: 72px;
+}
+#header__text_t{
+  color: #777777;
+  padding-top: 15px;
+}
+#header__title {
+  color: #777777;
+  font-size: 32px;
+  line-height: 24px;
+}
+#header__text_n {
+  color: #767676;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 34px;
+  line-height: 45px;
+}
+#header__text_fb {
+  color: #767676;
+  border-bottom: dashed 2px #767676;
+  width: max-content;
+  float: right;
+  font-weight: bold;
+  font-size: 19px;
+  padding-top: 2px
+}
+.header__info {
+  display: inline-block;
+  float: right;
+}
+#header__left {
+  display: inline-block;
+  height: min-content;
+  max-width: 234px;
+}
