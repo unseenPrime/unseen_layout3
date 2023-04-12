@@ -16,9 +16,6 @@ nav,footer,header,aside{display: block;}
 html, body{
   height: 100%;
   width: 100%;
-  font-style: 100%;
-  line-height: 1;
-  font-style: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -76,7 +73,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
 #header__title {
   padding-left: 10px;
   padding-top: 72px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 #header__text_t{
   color: #777777;
@@ -88,13 +85,14 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   font-size: 32px;
   line-height: 24px;
 }
-#header__text_n {
+.header__text_n {
   color: #767676;
   font-size: 40px;
   font-weight: normal;
   margin-top: 34px;
   line-height: 45px;
   height: max-content;
+  padding-top: 5px;
 }
 #header__text_fb {
   color: #767676;
