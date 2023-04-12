@@ -1,0 +1,109 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*, *:before, *:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+
+body,h1,h2,h3,h4,h5,h6,p,div {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 22px;
+  font-style: inherit;
+}
+.header {
+  background-color: #dcdcdc;
+  margin: 0 auto;
+  height: max-content;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: max-content;
+}
+.header__left{
+  display: flex;
+  margin-right: auto;
+}
+.header__right{
+  display: flex;
+  margin-left: auto;
+}
+
+.header__logo {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  width: 100px;
+  height: 100px;
+}
+#header__title {
+  padding-left: 10px;
+  padding-top: 72px;
+  margin: 0px auto;
+}
+#header__text_t{
+  color: #777777;
+  padding-top: 15px;
+  padding-left: 10px ;
+}
+#header__title {
+  color: #777777;
+  font-size: 32px;
+  line-height: 24px;
+}
+#header__text_n {
+  color: #767676;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 34px;
+  line-height: 45px;
+  height: max-content;
+}
+#header__text_fb {
+  color: #767676;
+  display: flex;
+  text-decoration:underline dashed 2px ;
+  width: max-content;
+  font-size: 19px;
+  padding-top: 2px;
+  height: max-content;
+  margin-left:  auto;
+  font-weight: 700;
+}
