@@ -1,3 +1,4 @@
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @font-face{
   font-family: 'Open Sans Condensed';
@@ -6,6 +7,7 @@
   font-weight: normal;
   font-style: normal;
 }
+/*Zeroing*/
 *{
   padding: 0;
   margin: 0;
@@ -46,13 +48,14 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   line-height: 22px;
   font-style: inherit;
 }
+/*Header*/
 .header {
   background-color: #dcdcdc;
   margin: 0 auto;
   height: 230px;
   width: 100%;
 }
-.container {
+.header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -61,11 +64,11 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   margin: 0 auto;
   height: max-content;
 }
-.header__left{
+.header__left__container{
   display: flex;
   margin-right: auto;
 }
-.header__right{
+.header__right__container{
   display: flex;
   margin-left: auto;
 }
@@ -116,6 +119,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   line-height: normal;
 }
 /*Adaptive*/
+/*Header adaptive*/
 @media (max-width: 720px) {
   .header{
     height: 215px;
@@ -145,18 +149,18 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   .header {
     height: 205px;
   }
-  .container{
+  .header__container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .header__left{
+  .header__left__container{
     margin-right: 10%;
     display: flex;
     margin-left: 10%;
     justify-content: space-evenly;
   }
-  .header__right{
+  .header__right__container{
     margin-left: 0;
   }
   .header__logo{
@@ -186,3 +190,43 @@ body,h1,h2,h3,h4,h5,h6,p,div {
     font-size: 12px;
   }
 }
+/*Menu adaptive*/
+
+/*Menu*/
+.menu {
+  width: 100%;
+  background-color: #777777;
+}
+.menu__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 80px;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+.menu__list > li {
+  margin-left: 13px;
+}
+.menu__link {
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+}
+.menu__link:hover {
+  text-decoration: underline #ffffff 2px;
+  text-underline-offset: 4px;
+}
+.menu__ver__slash{
+  color: #ffffff;
+  content: "|";
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
