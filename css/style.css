@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@font-face{
+  font-family: 'Open Sans Condensed';
+  src: url("../fonts/OpenSans_Condensed-Light.ttf") format('truetype');
+  src: url("../fonts/OpenSansCondensed-Light.woff");
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   padding: 0;
   margin: 0;
@@ -76,6 +84,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   color: #777777;
   padding-top: 15px;
   padding-left: 10px ;
+  font-weight: 550;
 }
 #header__title {
   color: #777777;
@@ -85,11 +94,12 @@ body,h1,h2,h3,h4,h5,h6,p,div {
 .header__text_n {
   color: #767676;
   font-size: 40px;
-  font-weight: normal;
+  font-weight: 400;
   margin-top: 34px;
   line-height: 45px;
   height: max-content;
   padding-top: 5px;
+  font-family: "Open Sans Condensed";
 }
 #header__text_fb {
   color: #767676;
@@ -101,6 +111,9 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   height: max-content;
   margin-left:  auto;
   font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  line-height: normal;
 }
 /*Adaptive*/
 @media (max-width: 720px) {
@@ -108,7 +121,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
     height: 215px;
   }
   .header__text_n{
-    font-size: 24px;
+    font-size: 30px;
     line-height: 28px;
     margin-top: 57px;
   }
@@ -157,13 +170,13 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   }
   .header__text_n{
     margin-top: 0;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 30px;
+    line-height: 28px;
 
   }
   #header__text_fb{
     font-size: 16px;
-    margin-left: 30px
+    margin-left: 38px
   }
   #header__title{
     padding-top: 38px;
