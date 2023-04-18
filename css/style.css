@@ -50,6 +50,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
 }
 /*Header*/
 .header {
+  position: relative;
   background-color: #dcdcdc;
   margin: 0 auto;
   height: 230px;
@@ -122,6 +123,8 @@ body,h1,h2,h3,h4,h5,h6,p,div {
 .menu {
   width: 100%;
   background-color: #777777;
+  z-index: 11111;
+  position: absolute;
 }
 .menu__container {
   display: flex;
@@ -155,7 +158,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   font-size: 30px;
   margin-bottom: 10px;
 }
-/*Burger menu*/
+/*Burger*/
 .burger{
   display: none;
   cursor: pointer;
@@ -166,7 +169,39 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   background-color: #fff;
   margin: 5px 0;
 }
-
+/*Slider*/
+.slider {
+  position: relative;
+  width: 100%;
+  top: 18px;
+  height: 462px;
+  padding-right: 70px;
+  padding-left: 82px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.slick-arrow{
+  position: absolute;
+  top:50%;
+  z-index: 20;
+  width: 34px;
+  height: 61px;
+  font-size: 0;
+}
+.slick-prev{
+  background: url("../img/left_but.png");
+  left: 25%;
+}
+.slick-next{
+  background: url("../img/right_but.png");
+  right: 25%;
+}
 /*Adaptive*/
 /*Header adaptive*/
 @media (max-width: 768px) {
@@ -280,7 +315,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 294px;
+    top: 80px;
     left: 0;
     padding-right: 14px;
     width: 100%;
@@ -288,10 +323,5 @@ body,h1,h2,h3,h4,h5,h6,p,div {
     z-index: 100;
     padding-bottom: 15px;
     padding-top: 0px;
-  }
-}
-@media (max-width: 435px) {
-  .menu__list.active{
-    top: 285px;
   }
 }
