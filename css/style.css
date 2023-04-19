@@ -43,7 +43,7 @@ img{vertical-align: top;}
 body,h1,h2,h3,h4,h5,h6,p,div {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 22px;
   font-style: inherit;
@@ -103,7 +103,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   line-height: 45px;
   height: max-content;
   padding-top: 5px;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", sans-serif;
 }
 #header__text_fb {
   color: #767676;
@@ -176,15 +176,12 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   width: 100%;
   margin-top: -60px;
   height: auto;
-  padding-right: 70px;
-  padding-left: 82px;
 }
 .slider img {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  z-index: 1;
 }
 .slick-arrow{
   position: absolute;
@@ -201,6 +198,70 @@ body,h1,h2,h3,h4,h5,h6,p,div {
 .slick-next{
   background: url("../img/right_but.png") 0 0 / 100% no-repeat;
   right: 22%;
+}
+/*Content*/
+.content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 1385px;
+  background-color: #ffffff;
+}
+.content__leftblock{
+  height: 100%;
+  width: 410px;
+}
+.content__centerblock{
+  height: 100%;
+  width: 780px;
+}
+.content__centerblock__goods{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.good{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+  height: 380px;
+  background-color: #dcdcdc;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 0;
+}
+.good_3{
+  margin-right: 0;
+}
+.good__info{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.good__basket{
+margin-right: 35px;
+}
+.good__prise{
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  color: #444444;
+  margin-left: 20px;
+  line-height: 18px;
+}
+.good__name{
+  color: #767676;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 0.45px;
+  line-height: normal;
+  margin-right: 50px;
+  margin-top: -20px;
 }
 /*Adaptive*/
 /*Header*/
