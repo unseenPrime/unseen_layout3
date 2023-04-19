@@ -18,7 +18,6 @@ $(document).ready(function(){
     centerPadding: '0px',
     slidesToShow: 1,
     pauseOnFocus:false,
-    adaptiveHeight:true,
     responsive: [
       {
         breakpoint: 768,
