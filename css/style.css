@@ -204,22 +204,24 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 1385px;
+  height: 1310px;
   background-color: #ffffff;
 }
 .content__leftblock{
   height: 100%;
-  width: 410px;
+  width: 200px;/*410 */
+  margin-left: 210px;
 }
 .content__centerblock{
   height: 100%;
-  width: 780px;
+  width: 795px;
 }
 .content__centerblock__goods{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-left: auto;
 }
 .good{
   display: flex;
@@ -230,11 +232,8 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   height: 380px;
   background-color: #dcdcdc;
   margin-bottom: 20px;
-  margin-right: 15px;
-  margin-left: 0;
-}
-.good_3{
   margin-right: 0;
+  margin-left: 15px;
 }
 .good__info{
   display: flex;
@@ -262,6 +261,108 @@ margin-right: 35px;
   line-height: normal;
   margin-right: 50px;
   margin-top: -20px;
+}
+.breadcrumbs{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18px;
+}
+.breadcrumbs__box{
+  padding-left: 210px;
+  height: 45px;
+  padding-top: 5px;
+}
+.underline{
+  text-decoration: underline 1px;
+  text-underline-offset: 1px;
+}
+.catalog__categories{
+  color: #767676;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+.catalog_subcategories{
+  display: none;
+  color: #767676;
+  font-size: 14px;
+  margin-left: 30px;
+}
+.catalog_parent:hover p{
+  text-decoration: underline 1px ;
+}
+.catalog_parent:hover .catalog_subcategories {
+  display: list-item;
+  list-style-type: disc;
+}
+.catalog_subcategories:hover{
+  color: black;
+  text-decoration: underline 1px;
+}
+.catalog__photo{
+  padding-top: 110px;
+  padding-right: 15px;
+  text-align: center;
+}
+.catalog__photo__name{
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+  text-align: center;
+  color: #444444;
+}
+.content__centerblock__pages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.pages{
+  color:#767676;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+}
+.curent{
+  font-size: 15px;
+  font-weight: 600;
+}
+.first{
+  padding-left: 0px;
+}
+.content__centerblock__interesting__info{
+  display: flex;
+  justify-content: space-between;
+  height: 415px;
+  width: 100%;
+  color: #767676;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  padding-top: 28px;
+}
+.interesting__info_1{
+  width: 371px;
+  height: 168px;
+}
+.interesting__info_2{
+  width: 368px;
+  height: 212px;
 }
 /*Adaptive*/
 /*Header*/
@@ -435,5 +536,72 @@ margin-right: 35px;
   .slick-arrow{
     width: 16px;
     height: 35px;
+  }
+}
+/*Content*/
+@media (min-width: 1441px) {
+  .content__leftblock{
+    margin-left: 350px;
+  }
+  .breadcrumbs__box{
+    padding-left: 350px;
+  }
+}
+@media (max-width: 1205px) {
+  .content__centerblock{
+    width: 550px;
+  }
+  .content__centerblock__goods{
+    justify-content: center;
+  }
+  .content__leftblock{
+    margin-left: 100px;
+  }
+  .breadcrumbs__box{
+    padding-left: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .content__leftblock{
+    margin-left: 25px;
+  }
+  .breadcrumbs__box{
+    padding-left: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .content__leftblock{
+    display: flex;
+    flex-direction: row;
+    width: 73%;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+  }
+  .breadcrumbs__box{
+    text-align: center;
+    padding-left: 0px;
+    padding-right:17%;
+  }
+  .catalog__photo{
+    padding-top: 0px;
+  }
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .content__centerblock{
+    width: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .catalog__photo{
+    display: none;
+  }
+  .breadcrumbs__box{
+    padding-right: 0%;
+    padding-left: 5%;
+  }
+  .content__leftblock{
+    margin-left: 0px;
   }
 }
