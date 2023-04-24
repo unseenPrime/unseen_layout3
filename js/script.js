@@ -31,3 +31,34 @@ $(document).ready(function(){
     ]
   });
 });
+//
+const feedbackBtn = document.getElementById("feedback-btn");
+const feedbackFormWrapper = document.getElementById("feedback-form-wrapper");
+const closeBtn = document.getElementById("close-btn");
+
+feedbackBtn.addEventListener("click", () => {
+  feedbackFormWrapper.style.display = "flex";
+  document.body.style.overflow = "hidden";
+  setTimeout(() => {
+    feedbackFormWrapper.style.opacity = "1";
+  }, 10);
+});
+
+closeBtn.addEventListener("click", () => {
+  feedbackFormWrapper.style.opacity = "0";
+  document.body.style.overflow = "visible";
+  setTimeout(() => {
+    feedbackFormWrapper.style.display = "none";
+  }, 500);
+});
+
+
+feedbackFormWrapper.addEventListener("click", (event) => {
+  if (event.target === feedbackFormWrapper) {
+    feedbackFormWrapper.style.opacity = "0";
+    document.body.style.overflow = "visible";
+    setTimeout(() => {
+      feedbackFormWrapper.style.display = "none";
+    }, 500);
+  }
+});

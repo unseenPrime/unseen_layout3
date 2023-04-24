@@ -11,6 +11,34 @@
 </head>
 
 <body>
+<div id="feedback-form-wrapper">
+  <div id="feedback-form">
+    <h1 id="fb_main">Зворотній зв'язок</h1>
+    <form class="form">
+      <div class="pading">
+        <label for="name" class="fb_text">Ваше ім'я *</label><br>
+        <input type="text" id="name" name="name" class="fb_input" required placeholder="Поле обов'язкове для заповнення"><br>
+      </div>
+      <div class="pading">
+        <label for="phone" class="fb_text">Телефон *</label><br>
+        <input type="text" id="phone" name="phone" class="fb_input" required placeholder="Поле обов'язкове для заповнення"><br>
+      </div>
+      <div class="pading">
+        <label for="email" class="fb_text">Email *</label><br>
+        <input class="fb_input" type="email" id="email" name="email" required placeholder="Поле обов'язкове для заповнення"><br>
+      </div>
+      <div class="pading">
+        <label for="message" class="fb_text">Повідомлення</label><br>
+        <textarea id="message" name="message" class="fb_input_message"></textarea>
+      </div>
+      <button id="btn_submit" type="submit">Надіслати</button>
+    </form>
+  <div id="close-btn">
+    <div class="close__line"></div>
+    <div class="close__line"></div>
+  </div>
+  </div>
+</div>
 <!--Header-->
 <header class="header">
   <div class="header__container">
@@ -29,7 +57,7 @@
           <a href="tel:+380667771234" class="header__text_n">+38 (066)-777-12-34</a><br>
           <a href="tel:+380997771234" class="header__text_n">+38 (099)-777-12-34</a>
         </h1>
-        <p><a href="#" id="header__text_fb">Зворотній зв'язок</a>
+        <button id="feedback-btn">Зворотній зв'язок</button>
       </div>
       </div>
     </div>
@@ -65,7 +93,7 @@
 <!--Content-->
 <content class="content">
   <div class="breadcrumbs__box breadcrumbs">
-    <a href="#" class="breadcrumbs underline">Головна</a> / <a href="#"class="breadcrumbs underline">Каталог</a> / <a href="#" class="breadcrumbs">Побутова техніка</a>
+    <a href="#" class="breadcrumbs underline">Головна</a> / <a href="#" class="breadcrumbs underline">Каталог</a> / <a href="#" class="breadcrumbs">Побутова техніка</a>
   </div>
   <div class="content__container">
     <div class="content__leftblock">
@@ -225,7 +253,7 @@
   <div class="footer__container">
     <div class="footer__copyright">
       <p class="footer__copyright_text">© 2012–2013 ЗАО «Компанія»<br>
-        <a href="maileto:info@name.com" class="footer__copyright_text">info@name.com</a></p>
+        <a href="mailto:info@name.com" class="footer__copyright_text">info@name.com</a></p>
     </div>
     <div class="footer__links">
       <a href="#" class="footer__link">Головна</a>
