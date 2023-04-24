@@ -588,7 +588,7 @@ margin-right: 35px;
   }
 }
 /*Content*/
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
   .content__leftblock{
     margin-left: 350px;
   }
@@ -669,6 +669,11 @@ margin-right: 35px;
   }
 }
 /*Footer*/
+@media (min-width:1440px ) {
+  .footer__copyright{
+    margin-left: 0;
+  }
+}
 @media (max-width: 1024px) {
   .footer__copyright{
     margin-left: 20px;
