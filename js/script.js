@@ -32,9 +32,9 @@ $(document).ready(function(){
   });
 });
 //
-const feedbackBtn = document.getElementById("feedback-btn");
-const feedbackFormWrapper = document.getElementById("feedback-form-wrapper");
-const closeBtn = document.getElementById("close-btn");
+const feedbackBtn = document.getElementsByClassName("header__feedback-btn")[0];
+const feedbackFormWrapper = document.getElementsByClassName("feedback-form-wrapper")[0];
+const closeBtn = document.getElementsByClassName("feedback-form__close-btn")[0];
 
 feedbackBtn.addEventListener("click", () => {
   feedbackFormWrapper.style.display = "flex";

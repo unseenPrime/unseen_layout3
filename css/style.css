@@ -65,11 +65,11 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   margin: 0 auto;
   height: max-content;
 }
-.header__left__container{
+.header__left-container{
   display: flex;
   margin-right: auto;
 }
-.header__right__container{
+.header__right-container{
   display: flex;
   margin-left: auto;
 }
@@ -79,23 +79,21 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   width: 100px;
   height: 100px;
 }
-#header__title {
+.header__title {
   padding-left: 10px;
   padding-top: 72px;
   margin: 0 auto;
+  color: #777777;
+  font-size: 32px;
+  line-height: 24px;
 }
-#header__text_t{
+.header__text-t{
   color: #777777;
   padding-top: 15px;
   padding-left: 10px ;
   font-weight: 550;
 }
-#header__title {
-  color: #777777;
-  font-size: 32px;
-  line-height: 24px;
-}
-.header__text_n {
+.header__text-n {
   color: #767676;
   font-size: 40px;
   font-weight: 400;
@@ -105,7 +103,7 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   padding-top: 5px;
   font-family: "Open Sans Condensed", sans-serif;
 }
-#feedback-btn {
+.header__feedback-btn {
   color: #767676;
   background-color: #dcdcdc;
   display: flex;
@@ -208,16 +206,16 @@ body,h1,h2,h3,h4,h5,h6,p,div {
   height: 1310px;
   background-color: #ffffff;
 }
-.content__leftblock{
+.content__container-left{
   height: 100%;
   width: 200px;
   margin-left: 210px;
 }
-.content__centerblock{
+.content__container-center{
   height: 100%;
   width: 795px;
 }
-.content__centerblock__goods{
+.content__container-center-goods{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -276,7 +274,7 @@ margin-right: 35px;
   height: 45px;
   padding-top: 5px;
 }
-.underline{
+.footer__site-development-text--underline{
   text-decoration: underline 1px;
   text-underline-offset: 1px;
 }
@@ -320,7 +318,7 @@ margin-right: 35px;
   text-align: center;
   color: #444444;
 }
-.content__centerblock__pages{
+.content__container-center-pages{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,14 +335,14 @@ margin-right: 35px;
   letter-spacing: normal;
   line-height: 22px;
 }
-.curent{
+.pages:nth-child(3){
   font-size: 15px;
   font-weight: 600;
 }
-.first{
+.pages:nth-child(1){
   padding-left: 0;
 }
-.content__centerblock__interesting__info{
+.content__container-center-interesting-info{
   display: flex;
   justify-content: space-between;
   height: 415px;
@@ -357,11 +355,11 @@ margin-right: 35px;
   line-height: 22px;
   padding-top: 28px;
 }
-.interesting__info_1{
+.interesting__info-1{
   width: 371px;
   height: 168px;
 }
-.interesting__info_2{
+.interesting__info-2{
   width: 368px;
   height: 212px;
 }
@@ -384,7 +382,7 @@ margin-right: 35px;
   width: 200px;
   height: 35px;
 }
-.footer__copyright_text{
+.footer__copyright-text{
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
@@ -403,7 +401,7 @@ margin-right: 35px;
   font-weight: 400;
   line-height: 26px;
 }
-.footer__site_development{
+.footer__site-development{
   display: flex;
   flex-direction: row;
   width: 220px;
@@ -415,7 +413,7 @@ margin-right: 35px;
   line-height: 22px;
 }
 /*Feedback*/
-#feedback-form-wrapper {
+.feedback-form-wrapper {
   display: none;
   position: fixed;
   top: 0;
@@ -427,7 +425,7 @@ margin-right: 35px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-#feedback-form {
+.feedback-form {
   position: absolute;
   display: flex;
   align-items: center;
@@ -441,7 +439,7 @@ margin-right: 35px;
   text-align: center;
   z-index: 1130;
 }
-.fb_text{
+.form__label{
   color: #535353;
   font-size: 14px;
   font-weight: 400;
@@ -450,7 +448,7 @@ margin-right: 35px;
   line-height: normal;
 
 }
-#close-btn {
+.feedback-form__close-btn {
   position: absolute;
   top: -27px;
   right: -27px;
@@ -459,7 +457,7 @@ margin-right: 35px;
   width: 27px;
   height: 27px;
 }
-#btn_submit{
+.form__submit-btn{
   background-color: #777777;
   width: 128px;
   height: 42px;
@@ -471,10 +469,10 @@ margin-right: 35px;
   letter-spacing: normal;
   line-height: normal;
 }
-.pading{
-  padding-top: 22px;
+.form__padding{
+  padding: 22px 10px 0 10px;
 }
-#fb_main{
+.feedback-form__main-title{
   color: #535353;
   font-size: 24px;
   font-weight: 700;
@@ -484,29 +482,29 @@ margin-right: 35px;
   padding-top: 25px;
   text-transform: uppercase;
 }
-.fb_input{
+.form__input{
   width: 339px;
   height: 40px;
   border: 1px solid #c3c3c3;
   background-color: #ffffff;
 }
-.fb_input_message{
+.form__textarea{
   width: 339px;
   height: 140px;
   border: 1px solid #c3c3c3;
   background-color: #ffffff;
   resize: none;
 }
-.close__line {
+.feedback-form__close-line {
   width: 25px;
   height: 1px;
   background-color: #fff;
   margin: 5px;
 }
-.close__line:nth-child(1) {
+.feedback-form__close-line:nth-child(1) {
   transform: rotate(45deg) translateY(8px) translateX(4px);
 }
-.close__line:nth-child(2) {
+.feedback-form__close-line:nth-child(2) {
   transform: rotate(-45deg) translateY(-1px) translateX(-4px);
 }
 input::placeholder {
@@ -522,22 +520,19 @@ input::placeholder {
   .header{
     height: 215px;
   }
-  .header__text_n{
+  .header__text-n{
     font-size: 30px;
     line-height: 28px;
     margin-top: 57px;
-  }
-  #header__text_fb{
-    font-size: 16px;
   }
   .header__logo{
     width: 85px;
     height: 85px;
   }
-  #header__title{
+  .header__title{
     font-size: 27px;
   }
-  #header__text_t{
+  .header__text-t{
     padding-top: 0;
     font-size: 12px;
   }
@@ -552,13 +547,13 @@ input::placeholder {
     justify-content: center;
     align-items: center;
   }
-  .header__left__container{
+  .header__left-container{
     margin-right: 10%;
     display: flex;
     margin-left: 10%;
     justify-content: space-evenly;
   }
-  .header__right__container{
+  .header__right-container{
     margin-left: 0;
   }
   .header__logo{
@@ -567,23 +562,23 @@ input::placeholder {
     width: 80px;
     height: 80px;
   }
-  #header__title{
+  .header__title{
     font-size: 28px;
   }
-  .header__text_n{
+  .header__text-n{
     margin-top: 0;
     font-size: 30px;
     line-height: 34px;
   }
-  #feedback-btn{
+  .header__feedback-btn{
     font-size: 16px;
     margin-left: 38px;
     padding-top: 5px;
   }
-  #header__title{
+  .header__title{
     padding-top: 38px;
   }
-  #header__text_t{
+  .header__text-t{
     padding-top: 0;
     font-size: 12px;
   }
@@ -692,7 +687,7 @@ input::placeholder {
 }
 /*Content*/
 @media (min-width: 1441px) {
-  .content__leftblock{
+  .content__container-left{
     margin-left: 350px;
   }
   .breadcrumbs__box{
@@ -700,13 +695,13 @@ input::placeholder {
   }
 }
 @media (max-width: 1205px) {
-  .content__centerblock{
+  .content__container-center{
     width: 550px;
   }
-  .content__centerblock__goods{
+  .content__container-center-goods{
     justify-content: center;
   }
-  .content__leftblock{
+  .content__container-left{
     margin-left: 100px;
   }
   .breadcrumbs__box{
@@ -717,7 +712,7 @@ input::placeholder {
   }
 }
 @media (max-width: 1024px) {
-  .content__leftblock{
+  .content__container-left{
     margin-left: 25px;
   }
   .breadcrumbs__box{
@@ -725,21 +720,21 @@ input::placeholder {
   }
 }
 @media (max-width: 768px) {
-  .content__leftblock{
+  .content__container-left{
     display: flex;
     flex-direction: row;
     width: 73%;
     justify-content: space-evenly;
     margin-bottom: 40px;
   }
-  .content__centerblock__interesting__info{
+  .content__container-center-interesting-info{
     flex-direction: column;
     margin-bottom: 100px;
   }
-  .interesting__info_1{
+  .interesting__info-1{
     width: 300px;
   }
-  .interesting__info_2{
+  .interesting__info-2{
     width: 300px;
     padding-top: 45px;
   }
@@ -755,7 +750,7 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
   }
-  .content__centerblock{
+  .content__container-center{
     width: 300px;
   }
 }
@@ -800,7 +795,7 @@ input::placeholder {
     padding-top: 15px;
     height: max-content;
   }
-  .footer__site_development{
+  .footer__site-development{
     padding-top: 15px;
     height: max-content;
   }
@@ -808,17 +803,17 @@ input::placeholder {
 }
 /*Feedback*/
 @media (max-width: 768px) {
-  #feedback-form{
+  .feedback-form{
     height: 495px;
     width: 320px;
   }
-  #fb_main{
+  .feedback-form__main-title{
     font-size: 15px;
   }
-  .pading{
+  .form__padding{
     padding-top: 5px;
   }
-  .fb_input,.fb_input_message{
+  .form__input,.form__textarea{
     width: 260px;
   }
 }
