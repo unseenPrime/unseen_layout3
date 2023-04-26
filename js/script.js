@@ -31,7 +31,6 @@ $(document).ready(function(){
     ]
   });
 });
-//
 const feedbackBtn = document.getElementsByClassName("header__feedback-btn")[0];
 const feedbackFormWrapper = document.getElementsByClassName("feedback-form-wrapper")[0];
 const closeBtn = document.getElementsByClassName("feedback-form__close-btn")[0];
@@ -52,7 +51,6 @@ closeBtn.addEventListener("click", () => {
   }, 500);
 });
 
-
 feedbackFormWrapper.addEventListener("click", (event) => {
   if (event.target === feedbackFormWrapper) {
     feedbackFormWrapper.style.opacity = "0";
@@ -60,5 +58,25 @@ feedbackFormWrapper.addEventListener("click", (event) => {
     setTimeout(() => {
       feedbackFormWrapper.style.display = "none";
     }, 500);
+  }
+});
+const submitBtn = document.querySelector('.form__submit-btn');
+const requiredInputs = document.querySelectorAll('.form__input[required]');
+const form = document.querySelector('.form');
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  let isFormValid = true;
+  requiredInputs.forEach(input => {
+    if (input.value.trim() === '') {
+      input.classList.add('invalid');
+      input.placeholder = 'Поле обов\'язкове для заповнення';
+      isFormValid = false;
+    } else {
+      input.classList.remove('invalid');
+    }
+  });
+  if (isFormValid) {
+    form.submit();
   }
 });
