@@ -18,17 +18,18 @@
     <form class="form">
       <div class="form__padding">
         <label for="name" class="form__label">Ваше ім'я *</label><br>
-        <input type="text" id="name" name="name" class="form__input" required><br>
-      </div>
-      <div class="form__padding">
+        <input type="text" id="name" name="name" class="form__input" pattern="[a-zA-Zа-яА-ЯїЇіІєЄґҐ'-]+" required
+               placeholder="Поле обов'язкове для заповнення"><br>
+
         <label for="phone" class="form__label">Телефон *</label><br>
-        <input type="text" id="phone" name="phone" class="form__input" required><br>
+        <input type="text" id="phone" name="phone" class="form__input" pattern="[0-9]{10}" required
+               placeholder="Поле обов'язкове для заповнення" ><br>
       </div>
       <div class="form__padding">
         <label for="email" class="form__label">Email *</label><br>
-        <input type="email" id="email" name="email" class="form__input" required><br>
-      </div>
-      <div class="form__padding">
+        <input type="email" id="email" name="email" class="form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}"
+               required placeholder="Поле обов'язкове для заповнення"><br>
+
         <label for="message" class="form__label">Повідомлення</label><br>
         <textarea id="message" name="message" class="form__textarea"></textarea>
       </div>

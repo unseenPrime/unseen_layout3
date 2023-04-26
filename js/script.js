@@ -60,23 +60,3 @@ feedbackFormWrapper.addEventListener("click", (event) => {
     }, 500);
   }
 });
-const submitBtn = document.querySelector('.form__submit-btn');
-const requiredInputs = document.querySelectorAll('.form__input[required]');
-const form = document.querySelector('.form');
-
-submitBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  let isFormValid = true;
-  requiredInputs.forEach(input => {
-    if (input.value.trim() === '') {
-      input.classList.add('invalid');
-      input.placeholder = 'Поле обов\'язкове для заповнення';
-      isFormValid = false;
-    } else {
-      input.classList.remove('invalid');
-    }
-  });
-  if (isFormValid) {
-    form.submit();
-  }
-});
